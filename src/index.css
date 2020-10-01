@@ -1,0 +1,105 @@
+html {
+  height: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --hefo-bg-color: rgb(0, 61, 153);
+  --hefo-font-family: "Varela Round", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.page-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: rgb(255, 255, 255);
+  background-color: var(--hefo-bg-color);
+  font-family: var(--hefo-font-family);
+}
+
+.page-content {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 450px;
+  padding: 10px;
+  border: 2px solid rgb(13, 13, 13);
+  border-radius: 6%;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.content-box__item {
+  display: flex;
+  width: 100%;
+}
+
+.content-box__item--top {
+  box-sizing: border-box;
+  height: 80%;
+  padding: 10px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+  font-size: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content-box__item--bottom {
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20%;
+}
+
+.btn {
+  width: 80px;
+  height: 50px;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.page-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--hefo-bg-color);
+  font-family: var(--hefo-font-family);
+}
+
+.created-by {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.created-by:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 880px) {
+  .content-box {
+    width: 60%;
+  }
+}
